@@ -147,7 +147,7 @@ def editScript(scriptNo):
     sendToServer(sock, payload)
 
 def quitEditing(scriptNo):
-    print("%s CLIENT requesting to edit script %s" % (datetime.datetime.now(), scriptNo))
+    print("%s CLIENT requesting to quit editing script %s" % (datetime.datetime.now(), scriptNo))
     payload = (access_key, "quit-editing", scriptNo)
     sendToServer(sock, payload)
 
