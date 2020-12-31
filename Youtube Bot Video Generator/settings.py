@@ -94,7 +94,7 @@ def generateConfigFile():
         config.set("server_location", 'port_server', '10000')
 
         config.add_section("uploads")
-        config.set("uploads", 'export_offline', 'False')
+        config.set("uploads", 'export_offline', 'true')
         config.set("uploads", 'fps', '60')
         config.set("uploads", 'uploads_a_day', '6')
         config.set("uploads", 'random_upload_hour_boundary1', '16')
